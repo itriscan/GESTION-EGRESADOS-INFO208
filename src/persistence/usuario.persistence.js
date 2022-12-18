@@ -1,11 +1,11 @@
 import {pool} from '../db.js'
 
 export const getUsuario = async() => {
-    const result = await pool.query("SELECT * FROM egresado")
+    const result = await pool.query("SELECT * FROM user")
     return result
 }
 
-export const createUser = async(egresado) => {
-    const [row] = await pool.query("INSERT INTO egresado (rut) VALUES (?)", [egresado.rut])
-    return {row};
+export const postUsuario = async(user) => {
+    const [row] = await pool.query("INSERT INTO user (rut) VALUES (?)", [user.rut])
+    return {row}
 } 
