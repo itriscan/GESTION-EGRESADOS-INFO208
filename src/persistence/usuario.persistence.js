@@ -6,6 +6,6 @@ export const getUsuario = async() => {
 }
 
 export const postUsuario = async(user) => {
-    const [row] = await pool.query("INSERT INTO user (rut) VALUES (?)", [user.rut])
+    const [row] = await pool.query("INSERT INTO user (rut, nombres, apellidos) VALUES (?,?,?)", [user.rut, user.nombres, user.apellidos])
     return {row}
 } 
