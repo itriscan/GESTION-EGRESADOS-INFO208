@@ -1,5 +1,5 @@
 import { User } from '../model/usuario.model.js'
-import {deleteUsuario, updateUsuario , postUsuario, getUsuario } from '../persistence/usuario.persistence.js'
+import {getUsuarioLogin, deleteUsuario, updateUsuario , postUsuario, getUsuario } from '../persistence/usuario.persistence.js'
 
 
 export const postUser = async (req, res) => {
@@ -21,4 +21,13 @@ export const putUser = async(req, res) => {
 export const deleteUser = async(req, res) => {
     const result = await deleteUsuario(req.body) 
     res.send("Eliminado correctamente")
+}
+
+export const getUserLogin = async(req, res) => {
+    const result = await getUsuarioLogin(req.body);
+    if(result.row.length == 1){
+        res.send("¡Bienvenid@ a su perfil!")
+    }if(result.row.length == 0){
+        res.send("Error en usuario o contraseña")
+    }
 }

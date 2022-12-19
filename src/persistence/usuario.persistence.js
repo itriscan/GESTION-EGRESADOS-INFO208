@@ -61,3 +61,9 @@ export const deleteUsuario = async (user) => {
     return result
 
 }
+
+export const getUsuarioLogin = async (user) => {
+    const [row] = await pool.query('SELECT nombres, apellidos FROM user WHERE id_user = ? and password = ?',[user.id_user, user.password])
+    return {row}
+}
+
