@@ -5,7 +5,6 @@
 
 ### Intrucciones generales mysql
 
-* agregar BD que se encuenta en GESTION-EGRESADOS-INFO208/bd.sql
 ### **¿Cómo agregar la BD?**
 
 * Posicionarse en la carpeta `GESTION-EGRESADOS-INFO208/bd.sql`

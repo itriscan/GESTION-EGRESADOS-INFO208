@@ -1,15 +1,14 @@
 import {Router} from 'express'
-import {getUser, postUser} from '../controllers/usuario.controllers.js'
+import {deleteUser ,putUser, getUser, postUser} from '../controllers/usuario.controllers.js'
 
 const router = Router()
 
-router.get('/user', getUser)
+router.get('/user', getUser);
 
 router.post('/user', postUser);
 
-router.get( '/secreto', (req,res) => {
-    console.log("hola")
-    res.send("aquí no es :(")
-})
+router.put('/user', putUser);
+
+router.delete('/user', deleteUser);
 
 export default router;

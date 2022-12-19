@@ -1,5 +1,5 @@
 import { User } from '../model/usuario.model.js'
-import { postUsuario, getUsuario } from '../persistence/usuario.persistence.js'
+import {deleteUsuario, updateUsuario , postUsuario, getUsuario } from '../persistence/usuario.persistence.js'
 
 
 export const postUser = async (req, res) => {
@@ -11,4 +11,14 @@ export const postUser = async (req, res) => {
 export const getUser = async (req, res) => {
     const result = await getUsuario(req.body)
     res.json(result[0]);
+}
+
+export const putUser = async(req, res) => {
+    const result = await updateUsuario(req.body);
+    res.json(result[0])
+}
+
+export const deleteUser = async(req, res) => {
+    const result = await deleteUsuario(req.body) 
+    res.send("Eliminado correctamente")
 }
