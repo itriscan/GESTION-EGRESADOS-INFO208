@@ -28,24 +28,15 @@ CREATE TABLE `user`(
 
 );
 
-CREATE TABLE IF NOT EXISTS `trabajo_formal`(
-    `id_trabajo` INT NOT NULL AUTO_INCREMENT,
-    `ref_user_tra` INT,
+CREATE TABLE IF NOT EXISTS `ofertas`(
+    `id_oferta` INT NOT NULL AUTO_INCREMENT,
+    `ref_user_oft` INT,
+    `tipo` varchar(255),
     `empresa` varchar(255),
     `descripcion` varchar(255),
     `tags` varchar(255),
-    FOREIGN KEY (`ref_user_tra`) REFERENCES  `user` (`id_user`),
-    PRIMARY KEY (`id_trabajo`)
-);
-
-CREATE TABLE IF NOT EXISTS `practica`(
-    `id_practica` INT NOT NULL AUTO_INCREMENT,
-    `ref_user_pra` INT,
-    `empresa` varchar(255),
-    `descripcion` TEXT,
-    `tags` varchar(255),
-    FOREIGN KEY (`ref_user_pra`) REFERENCES  `user` (`id_user`),
-    PRIMARY KEY (`id_practica`)
+    FOREIGN KEY (`ref_user_oft`) REFERENCES  `user` (`id_user`),
+    PRIMARY KEY (`id_oferta`)
 );
 
 CREATE TABLE IF NOT EXISTS `publicaciones`(

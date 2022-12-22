@@ -1,5 +1,6 @@
 import express from 'express'
 import routerEgresados from './src/routes/usuario.routes.js'
+import routerOfertas from './src/routes/oferta.routes.js'
 import cors from 'cors'
 
 var port = 3000
@@ -11,7 +12,8 @@ App.use(cors())
 
 App.use('/', routerEgresados);
 
+App.use('/', routerOfertas);
 
 App.listen(port, () =>{
-    console.log(`server started at http://localhost:${port}`);
+    console.log(`server started at http://localhost:${port}/`);
 });
