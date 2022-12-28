@@ -4,7 +4,7 @@ import routerOfertas from './src/routes/oferta.routes.js'
 import routerPublicaciones from './src/routes/publicaciones.routes.js'
 import cors from 'cors'
 
-var port = 3000
+var port = 3002
 const App = express();
 
 App.use(express.json())
