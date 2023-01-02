@@ -2,7 +2,8 @@
 * mysql o mariadb
 * nodejs
 
-* Para ejecutar el backen y el frontend se deben usar dos terminales 
+* Para ejecutar el backen y el frontend se deben usar dos terminales e ingresar a cada carpeta.
+
 
 ### Intrucciones generales backend
 ### **¿Cómo agregar la BD?**

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './style/App.css'
 import axios from 'axios'
 
-const URL = 'http://localhost:3000/user/'
+const URL = 'http://localhost:3002/user/'
 
 class Formulario extends Component {
     constructor(props){

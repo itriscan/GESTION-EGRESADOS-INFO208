@@ -11,11 +11,9 @@ function Header(){
               <img src={fcilogo} className="App-Upper-Decor2-logo" alt="fci-logo" />
             </div>
             <div className='App-Upper-Menu'>
-              <div className='App-Upper-Menu-Button'>INTERES</div>
-              <div className='App-Upper-Menu-Button'>BENEFICIOS</div>
-              <div className='App-Upper-Menu-Button'>EMPLEOS</div>
-              <div className='App-Upper-Menu-Button'>EGRESADOS</div>
-              <div className='App-Upper-Menu-Button'>PERSONAL</div>
+              <a className='App-Upper-Menu-Button' href='http://localhost:3000/'>FORMULARIO</a>
+              <a className='App-Upper-Menu-Button' href='http://localhost:3002/user'>EGRESADOS</a>
+              
             </div>
           </div>
         </div>
