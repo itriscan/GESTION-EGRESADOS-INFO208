@@ -11,8 +11,6 @@
   background-color: #373737;
   height: 2em ;
   width: 100vw;
-
-
 }
 
 .App-Upper-Decor2{
@@ -25,21 +23,54 @@
   animation: changeBackgroundColor 20s infinite;
 
 }
+/* #373737  #ff7b5d */
 @keyframes changeBackgroundColor {
-  0% {
+  0%{
+    background-color: #ff7b5d;
+  }
+  30%{
+    background-color: #ff7b5d;
+  }
+  40%{
     background-color: #373737;
   }
-  20% {
-    background-color: #ff7b5d;
+  50%{
+    background-color: #ffffff;
   }
   80%{
-    background-color: #ff7b5d;
+    background-color: #ffffff;
   }
-  90% {
+  90%{
     background-color: #373737;
   }
   100%{
-    background-color: #373737;
+    background-color: #ff7b5d;
+  }
+}
+
+@keyframes changeElementsColor {
+  0%{
+    filter: none;
+  }
+  30%{
+    filter: none;
+  }
+  40%{
+    filter: invert(20%) sepia(5%) saturate(3207%) hue-rotate(130deg) brightness(20%) contrast(80%);
+  }
+  50%{
+    
+    filter: invert(20%) sepia(70%) saturate(327%) hue-rotate(130deg) brightness(95%) contrast(80%);
+  }
+  80%{
+    
+    filter: invert(20%) sepia(70%) saturate(320%) hue-rotate(-60deg) brightness(95%) contrast(80%);
+  }
+  90%{
+    filter: none;
+  }
+  100%{
+    filter: none;
   }
 }
 .App-Upper-Decor2-text{
@@ -50,13 +81,14 @@
   word-wrap:break-word;
   color:white;
   font-weight: bold;
-
+  animation: changeElementsColor 20s infinite;
 }
 .App-Upper-Decor2-logo{
   height:60px;
   width:300px;
   margin: 3em;
   object-fit: cover;
+  animation: changeElementsColor 20s infinite;
  }
 .App-Upper-Menu{
   display: flex;
@@ -77,13 +109,16 @@
 }
 .App-Upper-Menu-Button:hover{
   background-color: #999999;
-  animation: colorChange 1s infinite;
 }
 @keyframes colorChange {
-  0%   {background-color: red; color: black;}
-  25%  {background-color: yellow; color: white;}
-  50%  {background-color: blue; color: black;}
-  100% {background-color: green; color: white;}
+  0%   {background-color: red; color: black;filter:blur(100%);
+  filter: drop-shadow(10vh 100vw 100vh);}
+  25%  {background-color: yellow; color: white;filter:blur(100%);
+  filter: drop-shadow(10vh 100vw 100vh);}
+  50%  {background-color: blue; color: black;filter:blur(100%);
+  filter: drop-shadow(10vh 100vw 100vh);}
+  100% {background-color: green; color: white;filter:blur(100%);
+  filter: drop-shadow(10vh 100vw 100vh);}
   }
 #seccion2 {
   position: absolute;
@@ -142,4 +177,3 @@ select[name="identificar"]{
   width: 160px;
   clear: left;
 }
-

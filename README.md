@@ -3,7 +3,7 @@
 * nodejs
 
 
-### Intrucciones generales mysql
+### Intrucciones generales backend
 
 ### **¿Cómo agregar la BD?**
 
@@ -17,11 +17,18 @@
 *   
     
 
-### ejecutar backend en el directorio /GESTION-EGRESADOS-INFO208
+### ejecutar backend en el directorio /GESTION-EGRESADOS-INFO208/backend
 * `npm i`
 * `npm run dev` 
 
 
-### Para las consultas utilice extencion de vscode THUNDER CLIENT
-*   https://www.thunderclient.com/
 
+
+### Las siguientes instrucciones se ejecutan en la carpeta GESTION-EGRESADOS-INFO208/frontend 
+### Instalar dependencias frontend
+
+* `npm install`
+
+### Iniciar frontend
+
+* `npm start `
