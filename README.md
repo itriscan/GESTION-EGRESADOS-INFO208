@@ -2,9 +2,9 @@
 * mysql o mariadb
 * nodejs
 
+* Para ejecutar el backen y el frontend se deben usar dos terminales 
 
 ### Intrucciones generales backend
-
 ### **¿Cómo agregar la BD?**
 
 * Posicionarse en la carpeta `GESTION-EGRESADOS-INFO208/bd.sql`
